@@ -3,7 +3,7 @@ pipeline {
     // 코드 푸시(웹훅) 및 1분 주기 자동 실행 설정
     triggers {
         githubPush()        // GitHub 웹훅 트리거 유지 (GitHub hook trigger for GITScm polling)
-        cron('* * * * *') // 무조건 1분마다 실행 (Build periodically)
+        // cron('* * * * *') // 무조건 1분마다 실행
         // cron('''TZ=Asia/Seoul H 2 * * *''')
     }
 
