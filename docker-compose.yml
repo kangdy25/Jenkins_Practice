@@ -8,4 +8,5 @@ services:
     volumes:
       - ./jenkins_home:/var/jenkins_home
       - .:/workspace
+      - /var/run/docker.sock:/var/run/docker.sock
     restart: unless-stopped
